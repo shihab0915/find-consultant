@@ -9,24 +9,19 @@
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
 */
-body{
-        padding-top: 60px;
-    }
-    /* fix padding under menu after resize and I m maintaining this media queries for adding class 'navbar-fixed-top */
-    @media screen and (max-width: 767px) {
-        body { padding-top: 50px; }
-    }
-    @media screen and (min-width:768px) and (max-width: 991px) {
-        body { padding-top: 60px; }
-    }
-    @media screen and (min-width: 992px) {
-        body { padding-top: 65px; }
-    }
+
 
 /* HEADER */
+.navbar{
+    margin-bottom: 0px !important; border-radius: 0px !important;
+}
 .navbar-default .navbar-nav>li>a {
     font-family: 'Open Sans', sans-serif;
     color: #FFF !important;
+    transition: all 0.6s ease;
+}
+.navbar-default .navbar-nav>li>a:hover{
+    background-color: rgba(13, 188, 234, .8) !important;
 }
 a.user_profile_32 img{
     border-radius: 50px;
@@ -78,3 +73,51 @@ a.user_profile_32 img{
 .dropdown-menu li a:hover{
     background: #0fa5cc !important;
 }
+/* Header End */
+
+/* Slider */
+.slidertandew{
+    margin-top: -20px;
+    position: relative;
+}
+/* Slider end*/
+
+/* Search */
+.serchtandew{
+    position: absolute; /* Relative to .slidertandew */
+    top: 50%;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+.serchtandew .search-button{
+    padding: 12px 22px !important;
+}
+.serchtandew input[type='text'], .serchtandew input[type='email'],  .serchtandew input[type='search'], .serchtandew textarea{
+    background-color: rgba(255, 255, 255, .5);
+}
+.search-btn{
+    right: 13px;
+}
+.serchtandew .button, .serchtandew .button[disabled] {
+    background-color: rgba(13, 188, 234, .8)
+}
+.f-dropdown {
+    background-color: rgba(13, 188, 234, .8)
+}
+/* Search end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
