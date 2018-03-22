@@ -25,5 +25,5 @@ wp-content/themes/*
 !wp-content/themes/find-consultant-child/
 
 # Ignore certain files in theme folder
-wp-content/themes/find-consultant-child/assets
-wp-content/themes/find-consultant-child/images
+wp-content/themes/find-consultant-child/assets/
+wp-content/themes/find-consultant-child/images/
