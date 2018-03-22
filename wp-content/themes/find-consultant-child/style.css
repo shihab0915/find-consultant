@@ -1,0 +1,80 @@
+/*
+ Theme Name:   Find Consultant Child
+ Description:  Find consultant based on Sierra Leone.
+ Author:       Shihab-Ul Haque
+ Author URI:   http://hoxdevelopment.com/
+ Template:     find-consultant
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+*/
+body{
+        padding-top: 60px;
+    }
+    /* fix padding under menu after resize and I m maintaining this media queries for adding class 'navbar-fixed-top */
+    @media screen and (max-width: 767px) {
+        body { padding-top: 50px; }
+    }
+    @media screen and (min-width:768px) and (max-width: 991px) {
+        body { padding-top: 60px; }
+    }
+    @media screen and (min-width: 992px) {
+        body { padding-top: 65px; }
+    }
+
+/* HEADER */
+.navbar-default .navbar-nav>li>a {
+    font-family: 'Open Sans', sans-serif;
+    color: #FFF !important;
+}
+a.user_profile_32 img{
+    border-radius: 50px;
+    border: 2px solid rgba(0, 192, 243, .4);
+}
+
+#custom_hrb_nav li:not(.hrb-notifications){
+    display: none;
+}
+
+#custom_hrb_nav .hrb-notifications{
+    list-style: none;
+}
+#custom_hrb_nav .hrb-notifications a{
+    font-family: 'Open Sans', sans-serif;
+    color: #FFF;
+}
+#custom_hrb_nav .hrb-notifications a:hover{
+    text-decoration: none;
+}
+
+#custom_hrb_nav span.inbox{
+    background: red;
+    color: white;
+    font-weight: bold;
+    padding: 0 2px;
+}
+
+.navbar-default{
+    background-color: rgba(0, 192, 243, .8) !important;
+    border-color: #00c0f3 !important;
+}
+.btn--inbox{
+    background: rgba(0, 192, 243, .95) !important;
+    border-color: #089dc4 !important;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+    background-color: rgba(0, 192, 243, .95) !important;
+}
+.dropdown-menu{
+    background-color: rgba(0, 192, 243, .6) !important;
+    border: 1px solid #12b2dd !important;
+}
+.dropdown-menu li a{
+    color: #FFF !important;
+    font-family: 'Open Sans', sans-serif;
+}
+.dropdown-menu li a:hover{
+    background: #0fa5cc !important;
+}
