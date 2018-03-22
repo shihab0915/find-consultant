@@ -23,3 +23,7 @@ wp-content/plugins/*
 # specify (see the commented-out example for a hint on how to do this.)
 wp-content/themes/*
 !wp-content/themes/find-consultant-child/
+
+# Ignore certain files in theme folder
+wp-content/themes/find-consultant-child/assets
+wp-content/themes/find-consultant-child/images
