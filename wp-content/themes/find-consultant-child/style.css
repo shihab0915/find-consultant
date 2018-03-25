@@ -11,7 +11,17 @@
 */
 
 /*Global*/
-clearfix::after{content: ""; clear: both; display: table;}
+.clearfix::after{content: ""; clear: both; display: table;}
+.headline{ font-family: 'Open Sans', sans-serif; font-weight: 300;
+    text-align: center; margin-top: 5rem;
+}
+.general-button-div{text-align: center; margin: 3rem 0 6rem 0;}
+.general-button-div a{ border: 1px solid #00c0f3; color: #222; font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif; padding: 5px 53px; transition: all 0.6s ease;
+}
+.general-button-div a:hover{background: #00c0f3; border: 1px solid #0aa2cb; 
+    color: #FFF; text-decoration: none;}
+.ini-pos{opacity: 0; transition: all 0.8s ease-out;} /* Using for JavaScript */
 /*Global end*/
 
 /* HEADER */
@@ -116,7 +126,7 @@ div[u="thumb"]{
 
 /* Popular categories */
 .popular-categories h1{ font-family: 'Open Sans', sans-serif; font-weight: 300;
-    text-align: center;
+    text-align: center; margin-top: 5rem;
 }
 .popular-categories a .col-md-3{
     text-align: center;
@@ -131,15 +141,74 @@ div[u="thumb"]{
 .popular-categories .col-md-3:hover{border: 1px solid #0aa2cb;}
 .popular-categories .fa{font-size: 5rem}
 
-.all-cat-button{text-align: center; margin: 3rem 0;}
+.all-cat-button{text-align: center; margin: 3rem 0 6rem 0;}
 .all-cat-button a{ border: 1px solid #00c0f3; color: #222; font-size: 1.6rem;
     font-family: 'Open Sans', sans-serif; padding: 5px 53px; transition: all 0.6s ease;
 }
 .all-cat-button a:hover{background: #00c0f3; border: 1px solid #0aa2cb; color: #FFF; text-decoration: none;}
 
+
 /* Popular categories end */
 
+/* HOW IT WORKS */
+.well--bg-one{background: rgba(239, 243, 250, .9); border-top: 1px solid #b6eefd;
+    border-bottom: 1px solid #b6eefd; font-family: 'Open Sans', sans-serif;
+}
+.howitworks h1{ margin-bottom: 3.3rem; }
+.find, .hire, .work, .pay{text-align: center;}
+.howitworks .fa{ font-size: 7rem; color: #714BEA; }
+.howitworks hr{display: block; height: 1px; border: 0; border-top: 1px solid #714BEA;
+    margin: 1em 0; padding: 0; 
+}
+.howitworks h6{font-size: 2.5rem; font-weight: 300;}
+.howitworks p{font-weight: 300; font-size: 1.5rem; }
+.front_page_post_prjt_btn{margin-bottom: 13rem; }
 
+.find{
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -ms-animation-duration: 1s;
+}
+.hire{
+    animation-duration: 1.3s;
+    -webkit-animation-duration: 1.3s;
+    -moz-animation-duration: 1.3s;
+    -ms-animation-duration: 1.3s;
+}
+.work{
+    animation-duration: 1.7s;
+    -webkit-animation-duration: 1.7s;
+    -moz-animation-duration: 1.7s;
+    -ms-animation-duration: 1.7s;
+}
+.pay{
+    animation-duration: 2.2s;
+    -webkit-animation-duration: 2.2s;
+    -moz-animation-duration: 2.2s;
+    -ms-animation-duration: 2.2s;
+}
+
+/* HOW IT WORKS END*/
+
+/* FRONT PAGE TOP CONSULTANTS */
+.front-page-consutant h1.top-consultants{
+    font-family: 'Open Sans', sans-serif; font-weight: 300;
+    text-align: center;
+}
+.front-page-consutant h1.top-consultants .fa{ color: #00c0f3; font-size: 6rem; }
+#fploop{font-family: 'Open Sans', sans-serif;}
+#fploop h3.fp_healine{
+    font-weight: 300;
+    margin-left: 14px;
+}
+.project-skills .label, .user-skills .label, .bidder-skills .label{
+    background-color: #00c0f3;
+}
+.project-skills .label:after, .user-skills .label:after, .bidder-skills .label:after{
+    border-left-color: #00c0f3;
+}
+/* FRONT PAGE TOP CONSULTANTS END*/
 
 
 

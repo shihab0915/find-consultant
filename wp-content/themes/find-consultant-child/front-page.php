@@ -8,65 +8,15 @@
     </div>
 </div>
 
-<section class="container-fluid popular-categories">
-    <div class="clearfix">
-    <h1>Popular Categories</h1>
-    <a href="#">
-        <div class="col-sm-6 col-md-3">
-            <i class="fa fa-snowflake-o" aria-hidden="true"></i>
-            <p>Strategy &amp; Operations</p>
-        </div>
-    </a>
-    <a href="#">
-        <div class="col-sm-6 col-md-3">
-            <i class="fa fa-line-chart" aria-hidden="true"></i>
-            <p>Business Analysis</p>
-        </div>
-    </a>
-    <a href="#">
-        <div class="col-sm-6 col-md-3">
-            <i class="fa fa-pie-chart" aria-hidden="true"></i>
-            <p>Corporate Strategy </p>
-        </div>
-    </a>
-    <a href="#">
-        <div class="col-sm-6 col-md-3">
-            <i class="fa fa-recycle" aria-hidden="true"></i>
-            <p>Principal Institute Research</p>
-        </div>
-    </a>
+<!-- POPULAR CATEGORIES -->
+<?php echo get_template_part('/includes/popular-categories'); ?>
 
-    <a href="#">
-        <div class="col-sm-6 col-md-3">
-            <i class="fa fa-deaf" aria-hidden="true"></i>
-            <p>People Scientist</p>
-        </div>
-    </a>
-    <a href="#">
-        <div class="col-sm-6 col-md-3">
-            <i class="fa fa-university" aria-hidden="true"></i>
-            <p>Management</p>
-        </div>
-    </a>
-    <a href="#">
-        <div class="col-sm-6 col-md-3">
-            <i class="fa fa-heartbeat" aria-hidden="true"></i>
-            <p>Health</p>
-        </div>
-    </a>
-    <a href="#">
-        <div class="col-sm-6 col-md-3">
-            <i class="fa fa-tree" aria-hidden="true"></i>
-            <p>Rural Development</p>
-        </div>
-    </a>
-    </div>
-   
-    <div class="all-cat-button">
-        <a href="#">See All Categories</a>
-    </div>
-</section>
-    
- 
-   
+<!-- HOW IT WORKS -->
+<?php echo get_template_part('/includes/how-it-works'); ?>
 
+<!-- FRONT PAGE RECENT PROJECTS AND TOP CONSULTANTS LOOP --> 
+<div id="fploop" class="container">
+    <div class="row">
+        <?php do_action( 'hrb_front_loops' ); ?>
+    </div>
+</div>
