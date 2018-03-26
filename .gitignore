@@ -27,3 +27,4 @@ wp-content/themes/*
 # Ignore certain files in theme folder
 wp-content/themes/find-consultant-child/assets/
 wp-content/themes/find-consultant-child/images/
+wp-content\themes\find-consultant-child/users.txt
