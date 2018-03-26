@@ -2,7 +2,7 @@
 /**
  * User registration page content
  *
- * @package HireBee\Templates
+ * @package Find-Consultant\Templates
  * @since 1.0.0
  */
 
