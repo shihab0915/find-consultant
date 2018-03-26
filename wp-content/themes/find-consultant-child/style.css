@@ -241,6 +241,15 @@ div[u="thumb"]{
 }
 /* DASHBOARD END*/
 
+/* FIND PROJECTS */
+.find-prjt #main{
+    box-shadow: -12px -2px 10px -10px #DDE0E6; font-family: 'Open Sans', sans-serif;
+}
+.find-prjt #sidebar{
+    box-shadow: 12px -2px 10px -10px #DDE0E6; font-family: 'Open Sans', sans-serif;
+}
+.find-prjt .sidebar-archive .section-head .search-button{ padding: 11px 18px; }
+/* FIND PROJECTS END*/
 
 
 /* Footer */
