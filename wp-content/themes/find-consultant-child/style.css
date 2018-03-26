@@ -21,6 +21,10 @@
 }
 .general-button-div a:hover{background: #00c0f3; border: 1px solid #0aa2cb; 
     color: #FFF; text-decoration: none;}
+h3{
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 300 !important;
+}
 .ini-pos{opacity: 0; transition: all 0.8s ease-out;} /* Using for JavaScript */
 /*Global end*/
 
@@ -211,14 +215,12 @@ div[u="thumb"]{
 /* FRONT PAGE TOP CONSULTANTS END*/
 
 
+/* REGISTRATION PAGE */
+.reg-pg-style{margin: 3rem 0; font-family: 'Open Sans', sans-serif; 
+    background: rgba(0, 192, 243, .4);
+}
 
-
-
-
-
-
-
-
+/* REGISTRATION PAGE END */
 
 
 /* Footer */
