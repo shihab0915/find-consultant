@@ -235,6 +235,14 @@ div[u="thumb"]{
 
 /* LOGIN PAGE END */
 
+/* DASHBOARD*/
+.user_dash #sidebar{
+    box-shadow: -12px -2px 10px -10px #DDE0E6;
+}
+/* DASHBOARD END*/
+
+
+
 /* Footer */
 footer{
     background: linear-gradient(0deg, rgba(125, 42, 232, .95), rgba(0, 192, 243, .95)), url('images/logo.png');
