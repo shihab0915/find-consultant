@@ -41,7 +41,7 @@
 
 			<?php if ( is_hrb_users_archive() ) : ?>
 
-				<h3><?php _e( 'Consultants', APP_TD ); ?></h3>
+				<h1 class="consultant-arcv"><i class="fa fa-graduation-cap" aria-hidden="true"></i> <?php _e( 'Consultants', APP_TD ); ?></h1>
 
 			<?php else : ?>
 

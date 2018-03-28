@@ -252,6 +252,15 @@ div[u="thumb"]{
 .find-prjt .sidebar-archive .section-head .search-button{ padding: 11px 18px; }
 /* FIND PROJECTS END*/
 
+/* FIND CONSULTANTS ARCHIVE */
+h1.consultant-arcv{
+    font-family: 'Open Sans', sans-serif; font-weight: 300;
+    color: #00c0f3;
+}
+
+
+/* FIND CONSULTANTS ARCHIVE END*/
+
 
 /* Footer */
 footer{
