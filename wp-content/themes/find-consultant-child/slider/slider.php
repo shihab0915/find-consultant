@@ -80,47 +80,28 @@
         <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="<?php echo get_stylesheet_directory_uri(); ?>/images/slider/spin.svg" />
     </div>
     <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1400px;height:380px;overflow:hidden;">
-
-        <div data-p="170.00">
-            <img data-u="image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/slider/045.jpg" />
-            <div u="thumb">Slide Description 001</div>
-        </div>
-        <div data-p="170.00">
-            <img data-u="image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/slider/043.jpg" />
-            <div u="thumb">Slide Description 002</div>
-        </div>
-        <div data-p="170.00">
-            <img data-u="image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/slider/046.jpg" />
-            <div u="thumb">Slide Description 003</div>
-        </div>
-        <div data-p="170.00">
-            <img data-u="image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/slider/047.jpg" />
-            <div u="thumb">Slide Description 004</div>
-        </div>
-        <div data-p="170.00">
-            <img data-u="image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/slider/048.jpg" />
-            <div u="thumb">Slide Description 005</div>
-        </div>
-        <div data-p="170.00">
-            <img data-u="image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/slider/044.jpg" />
-            <div u="thumb">Slide Description 006</div>
-        </div>
-        <div data-p="170.00">
-            <img data-u="image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/slider/050.jpg" />
-            <div u="thumb">Slide Description 007</div>
-        </div>
-        <div data-p="170.00">
-            <img data-u="image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/slider/049.jpg" />
-            <div u="thumb">Slide Description 008</div>
-        </div>
-        <div data-p="170.00">
-            <img data-u="image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/slider/052.jpg" />
-            <div u="thumb">Slide Description 009</div>
-        </div>
-        <div data-p="170.00">
-            <img data-u="image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/slider/051.jpg" />
-            <div u="thumb">Slide Description 010</div>
-        </div>
+        <?php 
+            $args = array(
+                'post_type'     => 'slider',
+                'post_per_page' => -1,
+                'orderby'       => 'menu_order', 
+                'order'         => 'ASC',
+                
+            );
+            $slider = new WP_Query( $args );
+        
+            while( $slider->have_posts() ){
+                $slider->the_post(); ?>
+                <div data-p="170.00">
+                   <?php 
+                    $attr = array(
+                        'data-u'   => 'image',
+                    );
+                    the_post_thumbnail( 'slide-size', $attr ); ?>
+                    <div u="thumb"><?php the_content(); ?></div>
+                </div>
+            <?php }
+        ?>
     </div>
     <!-- Thumbnail Navigator -->
     <div u="thumbnavigator" style="position:absolute;bottom:0px;left:0px;width:1400px;height:50px;color:#FFF;overflow:hidden;cursor:default;background-color:rgba(0,0,0,.5);">

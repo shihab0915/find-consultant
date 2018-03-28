@@ -24,4 +24,47 @@ function consultant_prefix_setup() {
 }
 add_action( 'after_setup_theme', 'consultant_prefix_setup' );
 
+// POST THUMBNAILS, IT'S SIZES AND CROPPING POSITION
+function consultant_setup_theme() {
+   add_theme_support( 'post-thumbnails' );
+   add_image_size( 'slide-size', 1400, 380, array( 'center', 'center') );
+}
+add_action( 'after_setup_theme', 'consultant_setup_theme' );
+
+
+// CUSTOM POST TYPES
+function consultant_post_type() {
+    // slider
+    register_post_type( 'slider', array(
+        'menu_position' => 3,
+        'supports'      => array( 'title', 'editor', 'thumbnail', 'page-attributes' ),
+        'public'        => true,
+        'labels' => array(
+			'name' => 'Slider',
+			'add_new_item' => 'Add New Slide',
+			'edit_item' => 'Edit Slide',
+			'all_items' => 'All Slides',
+			'singular_name' => 'Slide'
+		),
+		'menu_icon' => 'dashicons-slides',
+        
+    
+    ) );
+    
+}
+add_action( 'init', 'consultant_post_type' );
+
+
+
+
 ?>
+
+
+
+
+
+
+
+
+
+
