@@ -53,6 +53,6 @@
     </div>
    
     <div class="all-cat-button">
-        <a href="#">See All Categories</a>
+        <a href="<?php echo site_url('/categories'); ?>">See All Categories</a>
     </div>
 </section>

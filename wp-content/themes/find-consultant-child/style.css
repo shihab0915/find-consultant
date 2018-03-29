@@ -257,9 +257,15 @@ h1.consultant-arcv{
     font-family: 'Open Sans', sans-serif; font-weight: 300;
     color: #00c0f3;
 }
-
-
 /* FIND CONSULTANTS ARCHIVE END*/
+
+/* CATEGORIES */
+.container li.maincat a{ font-family: 'Open Sans', sans-serif; font-size: 1.3rem; }
+.container ul.subcat-list li.cat-item:before{ font-size: 16px; }
+.container ul.subcat-list li.cat-item a{ font-size: 1.2rem; text-transform: capitalize;
+    font-style: italic;
+}
+/* CATEGORIES END*/
 
 
 /* Footer */
