@@ -193,6 +193,9 @@ div[u="thumb"]{
     -ms-animation-duration: 2.2s;
 }
 
+.temp-hiw{ margin-top: 2rem; } 
+.temp-hiw p{ font-family: 'Open Sans', sans-serif; color: #9FA1A5; font-weight: 300; font-size: 1.5rem }/* how it works page */
+
 /* HOW IT WORKS END*/
 
 /* FRONT PAGE TOP CONSULTANTS */
@@ -265,8 +268,15 @@ h1.consultant-arcv{
 .container ul.subcat-list li.cat-item a{ font-size: 1.2rem; text-transform: capitalize;
     font-style: italic;
 }
+.category-row .maincat-list > li > a {
+ border-bottom: 16px solid #80C446;
+ }
 /* CATEGORIES END*/
 
+/* PASSWORD RECOVER */
+.pass_recover{ background: #0082BE; color: #FFF; margin-bottom: 2rem; font-family: 'Open Sans', sans-serif; }
+
+/* PASSWORD RECOVER END*/
 
 /* Footer */
 footer{

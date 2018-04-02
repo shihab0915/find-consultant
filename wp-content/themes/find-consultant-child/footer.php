@@ -4,7 +4,7 @@
  *
  * Displays all of the footer elements.
  *
- * @package FindConsultant
+ * @package Find-Consultant
  * @since 1.0.0
  */
 ?>

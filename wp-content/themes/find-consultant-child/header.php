@@ -4,7 +4,7 @@
  *
  * Displays all of the head elements.
  *
- * @package FindConsultant
+ * @package Find-Consultant
  * @since 1.0.0
  * @since 1.4.0 Added header tag. Moved content blocks into own template parts.
  */
