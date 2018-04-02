@@ -47,14 +47,31 @@ function consultant_post_type() {
 			'singular_name' => 'Slide'
 		),
 		'menu_icon' => 'dashicons-slides',
-        
-    
     ) );
     
 }
 add_action( 'init', 'consultant_post_type' );
 
 
+// About Us -Footer
+function consultant_aboutus_footer( $aboutusfooter ){
+    $aboutusfooter  ->  add_section( 'footer_section', array(
+        'title'     =>  'About Us -Footer',
+        'priority'  =>  10
+    ) );
+    
+    $aboutusfooter  ->  add_setting( 'about_us_text', array(
+        'default'   => 'Please write something about the company.',
+        'transport' =>  'refresh'
+    ));
+    
+    $aboutusfooter  ->  add_control( 'about_us_text', array(
+        'section'   =>  'footer_section',
+        'label'     =>  'About Us',
+        'type'      =>  'textarea'
+    ) );
+}
+add_action( 'customize_register', 'consultant_aboutus_footer' );
 
 
 ?>

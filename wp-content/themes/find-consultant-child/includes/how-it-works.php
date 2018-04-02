@@ -9,7 +9,12 @@
             <hr>
            <h6>Find</h6>
            <p class="text-center">
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui autem esse poteris, nisi te amor ipse ceperit? Polycratem Samium felicem appellabant. Nam aliquando posse recte fieri dicunt nulla expectata nec quaesita voluptate.
+               <?php
+                while( have_posts() ) {
+                    the_post();
+                    the_field('find');
+                }
+               ?>
            </p>
         </div>
         <div class="col-md-3 col-sm-6 hire">
@@ -19,7 +24,12 @@
            <hr>
            <h6>Hire</h6>
            <p class="text-center">
-            Reges: constructio interrete. Utinam quidem dicerent alium alio beatiorem! Iam ruinas videres. Quid autem habent admirationis.
+            <?php
+                while( have_posts() ) {
+                    the_post();
+                    the_field('hire');
+                }
+               ?>
            </p>
         </div>
         <div class="col-md-3 col-sm-6 work">
@@ -29,7 +39,12 @@
             <hr>
             <h6>Work</h6>
             <p class="text-center">
-               An vero displicuit ea, quae tributa est animi virtutibus tanta praestantia? Cuius similitudine perspecta in formarum specie ac dignitate transitum est ad honestatem dictorum atque factorum. At enim sequor utilitatem.
+               <?php
+                while( have_posts() ) {
+                    the_post();
+                    the_field('work');
+                }
+               ?>
            </p>
         </div>
         <div class="col-md-3 col-sm-6 pay">
@@ -39,7 +54,12 @@
             <hr>
             <h6>Pay</h6>
             <p class="text-center">
-               Carum sibi quemque, verum etiam vehementer carum esse? Hoc est non dividere, sed frangere. Restatis igitur vos; Laboro autem non sine causa; Iam contemni non poteris. 
+               <?php
+                while( have_posts() ) {
+                    the_post();
+                    the_field('pay');
+                }
+               ?> 
             </p>
        </div>
     </div>

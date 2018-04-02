@@ -1,18 +1,39 @@
 <section class="container-fluid ini-pos popular-categories">
     <div class="clearfix">
     <h1>Popular Categories</h1>
-    <a href="#">
-        <div class="col-sm-6 col-md-3">
-            <i class="fa fa-snowflake-o" aria-hidden="true"></i>
-            <p>Strategy &amp; Operations</p>
-        </div>
-    </a>
-    <a href="#">
-        <div class="col-sm-6 col-md-3">
-            <i class="fa fa-line-chart" aria-hidden="true"></i>
-            <p>Business Analysis</p>
-        </div>
-    </a>
+    
+    <?php 
+        while( have_posts() ) {
+        the_post(); 
+        $link = get_field('category_1_link');
+        $icon = get_field('category_1_icon');
+        $name = get_field('category_1_name');
+        ?>
+        <a href="<?php echo $link ?>">
+            <div class="col-sm-6 col-md-3">
+                <?php echo $icon; ?>
+                <p><?php echo $name; ?></p>
+            </div>
+        </a>            
+    <?php } ?>
+    
+    
+    <?php 
+        while( have_posts() ) {
+        the_post(); 
+        $link = get_field('category_2_link');
+        $icon = get_field('category_2_icon');
+        $name = get_field('category_2_name');
+        ?>
+        <a href="<?php echo $link ?>">
+            <div class="col-sm-6 col-md-3">
+                <?php echo $icon; ?>
+                <p><?php echo $name; ?></p>
+            </div>
+        </a>            
+    <?php } ?>
+
+
     <a href="#">
         <div class="col-sm-6 col-md-3">
             <i class="fa fa-pie-chart" aria-hidden="true"></i>

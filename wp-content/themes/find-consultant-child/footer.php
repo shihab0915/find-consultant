@@ -15,7 +15,7 @@
             <div class="col-md-6 ftr-about-us">
                 <?php the_custom_logo(); ?>
                 <h3>About Us</h3><hr style="margin:0">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec hoc ille non vidit, sed verborum magnificentia est et gloria delectatus. Numquam facies. Non est igitur voluptas bonum. Sint modo partes vitae beatae. Servari enim iustitia nisi a forti viro, nisi a sapiente non potest. Duo Reges: constructio interrete. Iam illud quale tandem est, bona praeterita non effluere sapienti, mala meminisse non oportere? Omnia peccata paria dicitis.</p>
+                <p><?php echo get_theme_mod('about_us_text') ?></p>
             </div>
             <div class="col-md-3 quicklink">
                 
