@@ -2,7 +2,7 @@
 /**
  * The template for displaying image attachments
  *
- * @package HireBee\Templates
+ * @package Find-Consultant\Templates
  * @since 1.4.1
  */
 ?>
