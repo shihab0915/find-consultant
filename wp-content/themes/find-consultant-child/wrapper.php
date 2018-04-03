@@ -32,16 +32,26 @@
 
 			<?php appthemes_after_header(); ?>
 			
-<?php
-    if( is_page('password-recovery') ) { ?>
+<?php if( is_page('password-recovery') ) { ?>
         <div class="container-fluid pass_recover">
             <?php do_action( 'hrb_content_container_top' ); ?>
         </div>
             <?php do_action( 'appthemes_notices' ); ?>
             <?php load_template( app_template_path() ); ?>
             
+<?php } elseif( is_front_page() || is_page('apply-to-project') || is_page('how-it-works') || is_home() ){ ?>
+       <div class="full-width">
+            <?php do_action( 'hrb_content_container_top' ); ?>
+            <div id="notices" class="row">
+                <div class="small-12 columns">
+                    <?php do_action( 'appthemes_notices' ); ?>
+                </div><!-- .columns -->
+            </div><!-- #appthemes_notices -->
+                    <?php load_template( app_template_path() ); ?>
+        </div><!-- .full-width -->  
+        
 <?php } else{ ?>
-<div class="full-width">
+<div class="container">
     <?php do_action( 'hrb_content_container_top' ); ?>
     <div id="notices" class="row">
         <div class="small-12 columns">
