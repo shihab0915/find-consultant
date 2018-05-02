@@ -1,0 +1,8 @@
+.container li.maincat a{ font-family: 'Open Sans', sans-serif; font-size: 1.3rem; }
+.container ul.subcat-list li.cat-item:before{ font-size: 16px; }
+.container ul.subcat-list li.cat-item a{ font-size: 1.2rem; text-transform: capitalize;
+    font-style: italic;
+}
+.category-row .maincat-list > li > a {
+ border-bottom: 16px solid #80C446;
+ }

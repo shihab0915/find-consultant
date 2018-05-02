@@ -1,0 +1,42 @@
+/*
+ Theme Name:   Find Consultant Child
+ Description:  Find consultant based on Sierra Leone.
+ Author:       Shihab-Ul Haque
+ Author URI:   http://hoxdevelopment.com/
+ Template:     find-consultant
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+*/
+
+
+/* 3rd party packages */
+
+
+/* SASS and Global'ish Stuff */
+@import "base/variables";
+@import "base/baseline";
+
+
+/* BEM Blocks */
+@import "modules/header";
+@import "modules/slider";
+@import "modules/search";
+@import "modules/popular-categories";
+@import "modules/how-it-works";
+@import "modules/fp_top_consultants";
+@import "modules/registration";
+@import "modules/login";
+@import "modules/dashboard";
+@import "modules/categories";
+@import "modules/find-projects";
+@import "modules/find-consultants";
+@import "modules/recover-password";
+@import "modules/button";
+@import "modules/etc";
+@import "modules/footer";
+
+
+
+

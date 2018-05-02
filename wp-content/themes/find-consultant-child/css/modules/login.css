@@ -1,0 +1,15 @@
+.login-pg-style{margin: 3rem 0; font-family: 'Open Sans', sans-serif; 
+    background: rgba(0, 192, 243, .4);
+}
+
+.login-pg-style label{ min-width: 100%; }
+
+.login-pg-style .register-box{ color: #555050; font-style: italic; }
+
+.login-pg-style .register-box .button a{ color: #FFF; }
+
+.login-pg-style .row { margin-top: 2rem; }
+
+.login-pg-style .form-field a{ color: red; }
+
+.login-pg-style #register a{ color: #FFF; font-style: italic; }

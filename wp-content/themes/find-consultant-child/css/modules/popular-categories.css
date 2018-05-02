@@ -1,0 +1,27 @@
+.popular-categories h1{ font-family: 'Open Sans', sans-serif; font-weight: 300;
+    text-align: center; margin-top: 5rem;
+}
+.popular-categories a .col-md-3{ text-align: center; padding: 20px 5px; }
+
+.popular-categories a{ color: #00c0f3; transition: color 0.5s ease; }
+
+.popular-categories a:hover{ color: #0aa2cb }
+
+.popular-categories a p{color: #222; font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem; margin-top: 1rem;
+}
+
+.popular-categories .col-md-3{ border: 1px solid #e2dede; transition: border 0.6s ease; }
+
+.popular-categories .col-md-3:hover{ border: 1px solid #0aa2cb; }
+
+.popular-categories .fa{ font-size: 5rem; }
+
+.all-cat-button{ text-align: center; margin: 3rem 0 6rem 0; }
+
+.all-cat-button a{ border: 1px solid #00c0f3; color: #222; font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif; padding: 5px 53px; transition: all 0.6s ease;
+}
+
+.all-cat-button a:hover{ background: #00c0f3; border: 1px solid #0aa2cb; color: #FFF; 
+	text-decoration: none; }

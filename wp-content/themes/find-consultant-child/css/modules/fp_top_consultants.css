@@ -1,0 +1,19 @@
+.front-page-consutant h1.top-consultants{
+    font-family: 'Open Sans', sans-serif; font-weight: 300;
+    text-align: center;
+}
+
+.front-page-consutant h1.top-consultants .fa{ color: #00c0f3; font-size: 6rem; }
+
+#fploop{ font-family: 'Open Sans', sans-serif; }
+
+#fploop h3.fp_healine{ font-weight: 300; margin-left: 14px; }
+
+.project-skills .label, .user-skills .label, .bidder-skills .label{
+    background-color: #00c0f3;
+}
+
+.project-skills .label:after, .user-skills .label:after, .bidder-skills .label:after{
+    border-left-color: #00c0f3;
+}
+

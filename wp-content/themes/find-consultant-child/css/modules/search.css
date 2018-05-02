@@ -1,0 +1,17 @@
+.serchtandew{ position: absolute; /* Relative to .slidertandew */
+    top: 50%; width: 100%; margin-left: 0; margin-right: 0;
+}
+
+.serchtandew .search-button{ padding: 12px 22px !important; }
+
+.serchtandew input[type='text'], .serchtandew input[type='email'],  .serchtandew input[type='search'], .serchtandew textarea{
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.search-btn{ right: 13px; }
+
+.serchtandew .button, .serchtandew .button[disabled] {
+    background-color: rgba(13, 188, 234, .8)
+}
+
+.f-dropdown { background-color: rgba(13, 188, 234, .8) }

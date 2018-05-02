@@ -1,0 +1,41 @@
+.well--bg-one{background: rgba(239, 243, 250, .9); border-top: 1px solid #b6eefd;
+    border-bottom: 1px solid #b6eefd; font-family: 'Open Sans', sans-serif;
+}
+.howitworks h1{ margin-bottom: 3.3rem; }
+.find, .hire, .work, .pay{text-align: center;}
+.howitworks .fa{ font-size: 7rem; color: #714BEA; }
+.howitworks hr{display: block; height: 1px; border: 0; border-top: 1px solid #714BEA;
+    margin: 1em 0; padding: 0; 
+}
+.howitworks h6{ font-size: 2.5rem; font-weight: 300; }
+.howitworks p{ font-weight: 300; font-size: 1.5rem; }
+.front_page_post_prjt_btn{ margin-bottom: 13rem; }
+
+.find{
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -ms-animation-duration: 1s;
+}
+.hire{
+    animation-duration: 1.3s;
+    -webkit-animation-duration: 1.3s;
+    -moz-animation-duration: 1.3s;
+    -ms-animation-duration: 1.3s;
+}
+.work{
+    animation-duration: 1.7s;
+    -webkit-animation-duration: 1.7s;
+    -moz-animation-duration: 1.7s;
+    -ms-animation-duration: 1.7s;
+}
+.pay{
+    animation-duration: 2.2s;
+    -webkit-animation-duration: 2.2s;
+    -moz-animation-duration: 2.2s;
+    -ms-animation-duration: 2.2s;
+}
+
+.temp-hiw{ margin-top: 2rem; } 
+.temp-hiw p{ font-family: 'Open Sans', sans-serif; color: #9FA1A5; font-weight: 300; 
+    font-size: 1.5rem } /* how it works page */
