@@ -31,7 +31,7 @@ jQuery(document).ready(function($){
         hire.css('visibility', 'visible');
     }, {offset: '70%'});  
     
-// FRONT PAGE HOW IT WORKS- HIRE
+// FRONT PAGE HOW IT WORKS- WORK
     var work = $('.work');
     work.css('visibility', 'hidden');
     work.waypoint(function() {
@@ -39,7 +39,7 @@ jQuery(document).ready(function($){
         work.css('visibility', 'visible');
     }, {offset: '70%'}); 
     
-// FRONT PAGE HOW IT WORKS- HIRE
+// FRONT PAGE HOW IT WORKS- PAY
     var pay = $('.pay');
     pay.css('visibility', 'hidden');
     pay.waypoint(function() {
