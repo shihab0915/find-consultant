@@ -85,8 +85,15 @@ global $wp_version;
 
 								<div class="row">
 									<div class="large-12 columns form-field">
-										<label><?php _e( 'Website', APP_TD ); ?></label>
-										<input type="url" name="url" class="text regular-text" id="url" value="<?php echo esc_url( $current_user->user_url ); ?>" maxlength="100" />
+										<label><?php _e( 'Link of your portfolio.', APP_TD ); ?></label>
+										<div class="alert alert-info" role="alert">
+										  It might be your resume link from any resume builder website or link of previously uploaded CV/Resume from your Google drive or something similar which will be easier for you! 
+										</div>
+									
+
+
+
+										<input type="url" name="url" class="text regular-text" id="url" value="<?php echo esc_url( $current_user->user_url ); ?>" maxlength="100" placeholder="examples: https://loremdemo.com/resume/dr.lorem"/>
 									</div>
 								</div>
 								<div class="row">

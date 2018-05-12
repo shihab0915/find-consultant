@@ -20,7 +20,7 @@
 /* Baseline except mixins*/
 
 
-body{ overflow-x: hidden; }
+body{ overflow-x: hidden; font-family: 'Open Sans', sans-serif !important; }
 
 
 .clearfix::after{ content: ""; clear: both; display: table; }
@@ -142,6 +142,28 @@ div[u="thumb"]{ font-family: 'Open Sans', sans-serif; font-style: italic; }
 
 
 .f-dropdown { background-color: rgba(13, 188, 234, .8) }
+
+
+/*NEWLY ORGANIZED SEARCH FORM ON FRONT-PAGE*/
+
+
+.fp_search{ margin-top: 19px; }
+
+
+.fp_search .search-button{ padding: 12px 22px !important; }
+
+
+.fp_search input[type='text'], .fp_search input[type='email'],  .fp_search input[type='search'], .fp_search textarea{
+    background-color: rgba(255, 255, 255, .5);
+}
+
+
+.fp_search .button, .fp_search .button[disabled] {
+    background-color: rgba(13, 188, 234, .8)
+}
+
+
+.f-dropdown a:hover { background-color: #24b0d6; font-style: italic; color: #FFF; }
 
 
 .popular-categories h1{ font-family: 'Open Sans', sans-serif; font-weight: 300;

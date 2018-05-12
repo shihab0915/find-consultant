@@ -66,7 +66,7 @@
         if( !is_user_logged_in() ){ ?>
           <ul class="nav navbar-nav navbar-center">
             <li><a href="<?php echo site_url('/post-a-project'); ?>">Post an advert</a></li>
-            <li><a href="<?php echo site_url('/dashboard'); ?>">Post your CV</a></li>
+            <li><a href="<?php echo site_url('/edit-profile'); ?>">Post your CV</a></li>
           </ul>
        <?php } ?>
       

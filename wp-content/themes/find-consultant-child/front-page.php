@@ -8,6 +8,10 @@
     </div>
 </div>
 
+<div class="fp_search">
+	<?php echo get_template_part('/includes/search'); ?>
+</div>
+
 <!-- POPULAR CATEGORIES -->
 <?php echo get_template_part('/includes/popular-categories'); ?>
 
