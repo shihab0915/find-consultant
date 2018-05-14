@@ -21,7 +21,7 @@
                 
                 <h3><i class="fa fa-link" aria-hidden="true"></i> Quick Links</h3><hr style="margin:0">
                 <p><a href="<?php echo site_url('/how-it-works'); ?>">How it Works</a></p>
-                <p><a href="<?php echo site_url('/categories'); ?>">Categoris</a></p>
+                <p><a href="<?php echo site_url('/categories'); ?>">Categories</a></p>
                 <p><a href="<?php echo site_url('/consultants'); ?>">Find Consultant</a></p>
                 <p><a href="<?php echo site_url('/post-a-project'); ?>">Post a Project</a></p>
                 <p><a href="<?php echo site_url('/register'); ?>">Become a consultant</a></p>

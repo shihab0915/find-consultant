@@ -47,7 +47,22 @@
 			</div>
 
 			<!-- freelancer desc-->
-			<div class="freelancer-description"><?php the_hrb_user_bio( $user ); ?></div>
+			<div class="freelancer-description">
+
+				<?php
+					$freelancer_bio = get_the_hrb_user_bio( $user );
+					$num_words = 150;
+					$more_symbol = '&hellip; &raquo;';
+
+					if( is_front_page() OR is_archive() ){
+						echo wp_trim_words( $freelancer_bio, $num_words, $more_symbol );
+					} else{
+						the_hrb_user_bio( $user );
+					}
+
+				?>
+
+			</div>
 
 		</div><!-- end 9-columns -->
 
