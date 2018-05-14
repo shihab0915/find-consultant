@@ -34,7 +34,14 @@
 					<div class="freelancer-success"><?php the_hrb_user_success_rate( $profile_author ); ?></div>
 					<div class="freelancer-portfolio">
 						<?php if ( $profile_author->user_url ) { ?>
-							<?php the_hrb_user_portfolio( $profile_author ); ?></a>
+							<?php 
+								if( pmpro_hasMembershipLevel('2') ){
+									the_hrb_user_portfolio( $profile_author );
+								} else{ ?>
+									<h6 class="alert alert-danger" role="alert" style="margin: 0;padding:7px;font-weight:bold;"><i class="fa fa-lock" aria-hidden="true"></i> Only Premium members can browse CV.</h6>
+								<?php }
+							?>
+							
 						<?php } ?>
 					</div>
 				</div>
