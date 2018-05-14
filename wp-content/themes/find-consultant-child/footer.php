@@ -20,11 +20,11 @@
             <div class="col-md-3 quicklink">
                 
                 <h3><i class="fa fa-link" aria-hidden="true"></i> Quick Links</h3><hr style="margin:0">
-                <p><a href="#">How it Works</a></p>
-                <p><a href="#">Categoris</a></p>
-                <p><a href="#">Find Consultant</a></p>
-                <p><a href="#">Post a Project</a></p>
-                <p><a href="#">Become a consultant</a></p>
+                <p><a href="<?php echo site_url('/how-it-works'); ?>">How it Works</a></p>
+                <p><a href="<?php echo site_url('/categories'); ?>">Categoris</a></p>
+                <p><a href="<?php echo site_url('/consultants'); ?>">Find Consultant</a></p>
+                <p><a href="<?php echo site_url('/post-a-project'); ?>">Post a Project</a></p>
+                <p><a href="<?php echo site_url('/register'); ?>">Become a consultant</a></p>
                 <p class="social">
                 <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></i></a>
                 <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
@@ -45,6 +45,6 @@
                 </p>
             </div>
         </div><hr style="margin-bottom: 0px;">
-        <p style="text-align: center; "><i class="fa fa-copyright" aria-hidden="true"></i> <?php the_time('Y'); ?> Company Name, All rights reserved. </p>
+        <p style="text-align: center; "><i class="fa fa-copyright" aria-hidden="true"></i> <?php the_time('Y'); ?> SLVC, All rights reserved. </p>
     </div>
 </footer><!-- #footer -->

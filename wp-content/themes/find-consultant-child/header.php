@@ -59,7 +59,25 @@
             if(is_user_logged_in()){ ?>
                 <button type="submit" class="btn btn-default btn--inbox"><span id="custom_hrb_nav"><?php the_hrb_user_nav_links(); ?></span></button>
         <?php } ?>
+
+
+        <?php // checks if user logged in and user is an employer and user has premium membership 
+          if( is_user_logged_in() && in_array( 'employer' , (array) $user->roles ) && pmpro_hasMembershipLevel('1') ){ ?>
+
+              <button type="button" class="btn btn-warning">
+                Membership <span class="badge badge-danger">Pro</span>
+              </button>
+
+          <?php }elseif( is_user_logged_in() && in_array( 'employer' , (array) $user->roles ) && !pmpro_hasMembershipLevel('1') ){ ?>
+              <a id="upgrade-membership" href="<?php echo site_url('/membership-levels'); ?>" type="button" class="btn btn-warning">Upgrade Membership</a>
+          <?php } // above condition checks if user logged in and user is an employer and user has NOT premium membership
+        ?>
         
+
+        
+
+
+
       </form>
 
       <?php 
