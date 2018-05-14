@@ -63,9 +63,7 @@
 
 				<div class="user-social-networks">
 
-					<?php if ( ! empty( $profile_author->user_url ) ) {  ?>
-							<a title="<?php esc_attr_e( __( 'Website', APP_TD ) ); ?>" href="<?php echo esc_url( $profile_author->user_url ); ?>"><i class="icon i-website"></i></a>
-					<?php } ?>
+					<?php // here was the website icon of consultants?>
 
 					<?php foreach ( get_the_hrb_user_social_networks( $profile_author ) as $network_id => $value ) { ?>
 							<a target="_blank" title="<?php echo esc_attr( APP_Social_Networks::get_title( $network_id) ); ?>" href="<?php echo esc_url( APP_Social_Networks::get_url( $network_id, $value ) ); ?>"><i class="icon fi-social-<?php echo esc_attr( $network_id ); ?>"></i></a>
