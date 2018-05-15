@@ -11,8 +11,17 @@
     <div id="primary" class="content-area row">
 
         <div id="main" class="large-8 columns">
-
-            <?php get_template_part( 'parts/loop', HRB_FREELANCER_UTYPE ); ?>
+        	
+        	<?php
+        		if( pmpro_hasMembershipLevel('2') ){
+					get_template_part( 'parts/loop', HRB_FREELANCER_UTYPE );
+        		} else{ ?>
+	    			<div class="col-xs-12 col-lg-10 col-lg-offset-2 well text-center alert alert-danger">
+	    				<h1><i class="fa fa-lock" aria-hidden="true"></i></h1>
+	    				<h1>Consultants's profiles are visible to Premium members only.</h1>
+	    			</div>        			
+        		<?php }
+        	?>
 
         </div><!-- #main -->
 
